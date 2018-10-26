@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.section-calculate {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.calculate {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    min-height: 60rem;
+    width: 70%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 1.5rem 1.5rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+.calculate__header {
+    margin: 2rem;
+}
+
+.calculate__form {
+    margin-bottom: 2rem;
+}
+
+.calculate__input {
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    transition: all .2s;
+}
+
+.calculate__input:focus {
+    border-color:#999;
+    outline: none;
+}
+
+.calculate__controls {
+    margin-bottom: 2rem;
+}
+
+.calculate__btn {
+    padding: 1rem;
+    border: 1.3px solid #ddd;
+    transition: all .2s;
+}
+
+.calculate__btn--secondary {
+    background-color: transparent;
+}
+
+.calculate__btn:hover {
+    background-color: #999;
+    border: 1px solid #999;
+    color: #fff;
+}
+
+.calculate__btn:focus {
+    outline: none;
+}
+
+.calculate__btn--primary:focus {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+.calculate__btn--secondary:focus {
+    background-color: #efefef;
+}
+
+.calculate__table {
+    margin: auto;
+    width: auto;
+    border-collapse: collapse;
+    overflow-y: auto;
+}
+
+.calculate__row,
+.calculate__col {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.calculate__row:nth-child(even) {
+    background-color: #eee;
+}
+
+
+
+.settings {
+    display: none;
+}
